@@ -1,5 +1,5 @@
-\ eucalyptus.fs
 \ gforth 0.7.2
+
 
 s" digraphite.fs" included
 
@@ -17,11 +17,14 @@ variable digital 128 allot
 
 create sequence 512 allot
 
-: signat  #H0 ;  \ retrieve specie from databank
+create signat 384 allot
+
+~H0 signat place  \ default
+
 : tabout  4 spaces ;
-: specie  signat type cr ;
-: headed  signat digital @ /string sequence place ;
-: tailed  signat hermes /string drop digital @ sequence +place ;
+: specie  signat count ;
+: headed  specie digital @ /string sequence place ;
+: tailed  specie hermes /string drop digital @ sequence +place ;
 : scribe  sequence count type cr ;
 : pegbox  tabout headed tailed scribe ;
 : ennead  9 0 ?do digital ! pegbox loop ;
