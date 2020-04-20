@@ -1,5 +1,3 @@
-\ gforth 0.7.2
-
 
       : ~J2  s" vv zq __ __ ry wu __ uw __ sx __ qz " ;
       : ~J3  s" vt __ tv xq __ ws __ uu __ sw __ qx " ;
@@ -84,5 +82,4 @@
  : ~J3K56M4  s" vo __ ty xu __ __ __ ux yt __ ov qq " ;
  : ~K1J56L7  s" __ ux yt __ ov qq vo __ ty xu __ __ " ;
  : ~K2J56L7  s" yr __ __ qz vv zq to __ ry wu __ __ " ;
-
 

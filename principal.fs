@@ -1,13 +1,13 @@
-\ gforth 0.7.2
-
 
 s" eucalyptus.fs" included
 
+: instrument  guitar ;
+
+cr cr
+~H0 signat place instrument
 cr
-~J6 signat place matrix
-cr
-~K5 signat place matrix
-cr
+~j3 signat place instrument
+cr cr
 
 bye
 

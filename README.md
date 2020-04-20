@@ -14,7 +14,7 @@ Command-line interface
 
     cd juxtaposium/
 
-    gforth principal.fs
+    gforth-0.7.2 principal.fs
 
 ---
 
