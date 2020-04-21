@@ -1,5 +1,5 @@
 
-s" digraphite.fs" included
+require digraphite.fs
 
  0 constant hermes
  6 constant jovian
@@ -11,21 +11,23 @@ s" digraphite.fs" included
 30 constant aquari
 33 constant vulcan
 
-variable digital 128 allot
-
-create sequence 512 allot
+create digita 128 allot
+create kronic 128 allot
 
 create signat 256 allot
+create serial 384 allot
+create sequen 512 allot
 
 ~H0 signat place  \ initialize
 
 : tabout  4 spaces ;
 : specie  signat count ;
-: headed  specie digital @ /string sequence place ;
-: tailed  specie hermes /string drop digital @ sequence +place ;
-: scribe  sequence count type cr ;
+: headed  specie digita @ /string sequen place ;
+: tailed  specie hermes /string drop digita @ sequen +place ;
+: scribe  sequen count type cr ;
 : pegbox  tabout headed tailed scribe ;
-: cyclop  0 ?do digital ! pegbox loop ;
+: cyclop  0 ?do digita ! pegbox loop ;
+: epoch?  utime drop ;
 
 : ennead  9 cyclop ;
 : quarts  gemini vulcan copper silver jovian helios hermes saturn aquari ;

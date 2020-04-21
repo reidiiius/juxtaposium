@@ -1,12 +1,18 @@
 
-s" eucalyptus.fs" included
+require eucalyptus.fs
 
-: instrument  guitar ;
+epoch? kronic !
+
+: instru  guitar ;
+: attune  s" -eadgbe-m" ;
+: diadem  attune serial ! serial @ type kronic @ . cr ;
 
 cr cr
-~H0 signat place instrument
-cr
-~j3 signat place instrument
+tabout s" h0" type diadem
+~H0 signat place instru
+cr cr
+tabout s" j3" type diadem
+~j3 signat place instru
 cr cr
 
 bye
