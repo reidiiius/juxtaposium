@@ -18,7 +18,7 @@ create signat 256 allot
 create serial 384 allot
 create sequen 512 allot
 
-~H0 signat place  \ initialize
+~N0 signat place  \ initialize
 
 : tabout  4 spaces ;
 : specie  signat count ;

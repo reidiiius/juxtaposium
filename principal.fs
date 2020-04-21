@@ -8,11 +8,11 @@ epoch? kronic !
 : diadem  attune serial ! serial @ type kronic @ . cr ;
 
 cr cr
-tabout s" h0" type diadem
-~H0 signat place instru
+tabout s" n0" type diadem
+~N0 signat place instru
 cr cr
 tabout s" j3" type diadem
-~j3 signat place instru
+~J3 signat place instru
 cr cr
 
 bye

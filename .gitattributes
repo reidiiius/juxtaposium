@@ -1,3 +1,4 @@
 
 *.fs linguist-language=forth
+*.fb linguist-language=forth 
 
