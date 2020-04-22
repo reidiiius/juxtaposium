@@ -1,19 +1,27 @@
 
-require eucalyptus.fs
+s" eucalyptus.fs" included
 
-epoch? kronic !
+: n0&j3
+  tabout s" n0" type diadem
+  ~N0 signat place instru cr
+  tabout s" j3" type diadem
+  ~J3 signat place instru ;
 
-: instru  guitar ;
-: attune  s" -eadgbe-m" ;
-: diadem  attune serial ! serial @ type kronic @ . cr ;
+: j36&j6
+  tabout s" j36" type diadem
+  ~J36 signat place instru cr
+  tabout s" j6" type diadem
+  ~J6 signat place instru ;
 
-cr cr
-tabout s" n0" type diadem
-~N0 signat place instru
-cr cr
-tabout s" j3" type diadem
-~J3 signat place instru
-cr cr
+cr
+
+n0&j3
+
+cr miller
+
+j36&j6
+
+cr
 
 bye
 

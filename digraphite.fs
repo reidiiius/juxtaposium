@@ -83,3 +83,21 @@
  : ~K1J56L7  s" __ ux yt __ ov qq vo __ ty xu __ __ " ;
  : ~K2J56L7  s" yr __ __ qz vv zq to __ ry wu __ __ " ;
 
+ 0 constant hermit
+ 6 constant jovian
+12 constant copper
+15 constant saturn
+18 constant gemini
+21 constant helios
+27 constant silver
+30 constant aquari
+33 constant vulcan
+
+variable digita
+variable serial
+
+create sequen 512 allot
+create signat 128 allot
+
+~N0 signat place  \ initialize
+

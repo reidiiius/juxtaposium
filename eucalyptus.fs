@@ -1,43 +1,70 @@
 
-require digraphite.fs
+s" digraphite.fs" required
 
- 0 constant hermes
- 6 constant jovian
-12 constant copper
-15 constant saturn
-18 constant gemini
-21 constant helios
-27 constant silver
-30 constant aquari
-33 constant vulcan
+: tabout
+  4 spaces ;
 
-create digita 128 allot
-create kronic 128 allot
+: specie
+  signat count ;
 
-create signat 256 allot
-create serial 384 allot
-create sequen 512 allot
+: headed
+  specie digita @ /string sequen place ;
 
-~N0 signat place  \ initialize
+: tailed
+  specie hermit /string drop digita @ sequen +place ;
 
-: tabout  4 spaces ;
-: specie  signat count ;
-: headed  specie digita @ /string sequen place ;
-: tailed  specie hermes /string drop digita @ sequen +place ;
-: scribe  sequen count type cr ;
-: pegbox  tabout headed tailed scribe ;
-: cyclop  0 ?do digita ! pegbox loop ;
-: epoch?  utime drop ;
+: scribe
+  sequen count type cr ;
 
-: ennead  9 cyclop ;
-: quarts  gemini vulcan copper silver jovian helios hermes saturn aquari ;
-: matrix  quarts ennead ;
+: pegbox
+  tabout headed tailed scribe ;
 
-: hexad   6 cyclop ;
-: eadgbe  copper silver jovian helios vulcan copper ;
-: guitar  eadgbe hexad ;
+: cyclop
+  0
+  ?do    digita ! pegbox
+  loop ;
 
-: pentad  5 cyclop ;
-: cgdae   hermes helios jovian silver copper ;
-: cello   cgdae pentad ;
+: ennead
+  9 cyclop ;
+
+: quarts
+  gemini vulcan copper silver jovian helios hermit saturn aquari ;
+
+: matrix
+  quarts ennead ;
+
+: hexad
+  6 cyclop ;
+
+: eadgbe
+  copper silver jovian helios vulcan copper ;
+
+: guitar
+  eadgbe hexad ;
+
+: pentad
+  5 cyclop ;
+
+: cgdae
+  hermit helios jovian silver copper ;
+
+: cello
+  cgdae pentad ;
+
+: instru
+  guitar ;  \ select layout
+
+: attune
+  s" -eadgbe-h" ;  \ display tuning
+
+: diadem
+  attune type serial @ . cr ;
+
+: epoch?
+  utime drop ;
+
+: miller
+  epoch? serial ! ;
+
+miller  \ initialize
 
