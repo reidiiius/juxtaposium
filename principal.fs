@@ -1,27 +1,21 @@
 
 s" eucalyptus.fs" included
 
-: n0&j3
-  tabout s" n0" type diadem
-  ~N0 signat place instru cr
-  tabout s" j3" type diadem
-  ~J3 signat place instru ;
-
-: j36&j6
-  tabout s" j36" type diadem
-  ~J36 signat place instru cr
-  tabout s" j6" type diadem
-  ~J6 signat place instru ;
-
 cr
 
-n0&j3
+~N0 signat place
+s" n0" layout
 
-cr miller
+~J3 signat place
+s" j3" layout
 
-j36&j6
+miller
 
-cr
+~J36 signat place
+s" j36" layout
+
+~J6 signat place
+s" j6" layout
 
 bye
 

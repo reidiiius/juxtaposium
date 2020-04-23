@@ -22,7 +22,8 @@ s" digraphite.fs" required
 : cyclop
   0
   ?do    digita ! pegbox
-  loop ;
+  loop
+  cr ;
 
 : ennead
   9 cyclop ;
@@ -52,13 +53,16 @@ s" digraphite.fs" required
   cgdae pentad ;
 
 : instru
-  guitar ;  \ select layout
+  guitar ;  \ select tuning
 
 : attune
-  s" -eadgbe-h" ;  \ display tuning
+  ." -eadgbe" ;  \ display tuning
 
 : diadem
-  attune type serial @ . cr ;
+  attune ." -h" serial @ . cr ;
+
+: layout
+  tabout type diadem instru ;
 
 : epoch?
   utime drop ;
