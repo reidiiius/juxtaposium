@@ -1,21 +1,17 @@
 
 s" eucalyptus.fs" included
 
-cr
+s" n0" ~N0 engrave
 
-~N0 signat place
-s" n0" layout
-
-~J3 signat place
-s" j3" layout
+s" j3" ~J3 engrave
 
 miller
 
-~J36 signat place
-s" j36" layout
+s" j36" ~J36 engrave
 
-~J6 signat place
-s" j6" layout
+s" j6" ~J6 engrave
+
+cr
 
 bye
 

@@ -22,8 +22,7 @@ s" digraphite.fs" required
 : cyclop
   0
   ?do    digita ! pegbox
-  loop
-  cr ;
+  loop ;
 
 : ennead
   9 cyclop ;
@@ -62,7 +61,10 @@ s" digraphite.fs" required
   attune ." -h" serial @ . cr ;
 
 : layout
-  tabout type diadem instru ;
+  cr tabout type diadem instru ;
+
+: engrave
+  signat place layout ;
 
 : epoch?
   utime drop ;
