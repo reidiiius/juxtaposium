@@ -16,6 +16,10 @@ Command-line interface
 
     gforth principal.fs
 
+    gforth eucalyptus.fs -e 'help bye'
+
+    gforth eucalyptus.fs -e 's" n0" ~N0 engrave cr bye'
+
 ---
 
 ### Distribution
