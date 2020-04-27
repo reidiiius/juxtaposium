@@ -83,6 +83,26 @@
  : ~K1J56L7  s" __ ux yt __ ov qq vo __ ty xu __ __ " ;
  : ~K2J56L7  s" yr __ __ qz vv zq to __ ry wu __ __ " ;
 
+: scarlet
+  cr
+  .\" \t ~J136L7  ~J167L2 ~J17    ~J17L2 ~J2     ~J23   ~J236    \n"
+  .\" \t ~J23K6   ~J246L3 ~J26    ~J26L3 ~J26L34 ~J2K56 ~J2K56M4 \n"
+  .\" \t ~J2K6    ~J2K6M5 ~J2K6L3 ~J2L3  ~J3     ~J34K6 ~J36     \n"
+  .\" \t ~J3K56M4 ~J3K5M4 ~J3K6   ~J6    ~K157M6 ~K1J6  ~K256    \n"
+  .\" \t ~K26     ~K26M5  ~K2J17  ~K2J6  ~K56    ~K56M4 ~K6      \n"
+  .\" \t ~K6M5    ~N0     ~N167M4 ~N26L5 ~N345   ~N45L2 ~N5L2    \n"
+  ;
+
+: emerald
+  cr
+  .\" \t ~K135M4  ~K345M2 ~K34    ~K34M2 ~K2     ~K12   ~K125    \n"
+  .\" \t ~K12J5   ~K257M1 ~K25    ~K25M1 ~K25M17 ~K2J56 ~K2J56L7 \n"
+  .\" \t ~K2J5    ~K2J5L6 ~K2J5M1 ~K2M1  ~K1     ~K17J5 ~K15     \n"
+  .\" \t ~K1J56L7 ~K1J6L7 ~K1J5   ~K5    ~J346L5 ~J3K5  ~J256    \n"
+  .\" \t ~J25     ~J25L6  ~J2K34  ~J2K5  ~J56    ~J56L7 ~J5      \n"
+  .\" \t ~J5L6    ~N0     ~N345L7 ~N25M6 ~N167   ~N67M2 ~N6M2    \n"
+  ;
+
  0 constant hermit
  6 constant jovian
 12 constant copper
@@ -96,8 +116,8 @@
 variable digita
 variable serial
 
-create sequen 512 allot
-create signat 128 allot
+create sequen 64 chars allot
+create signat 16 chars allot
 
 ~N0 signat place  \ initialize
 
